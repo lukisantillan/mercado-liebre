@@ -3,13 +3,14 @@ const path = require('path');
 
 const app = express();
 
-const publicPath = path.resolve(__dirname, './public');
-app.use( express.static(publicPath) );
+const publicPath = path.resolve('public');
+app.use(express.static(publicPath));
 
-app.listen(1200, () => {
-    console.log('Servidor corriendo en puerto 1200');
+const APP_PORT = 1200
+app.listen(APP_PORT, () => {
+    console.log('Servidor corriendo en puerto' + APP_PORT);
 });
 
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/home.html'));
+    res.sendFile(path.resolve('views/home.html'));
 });
