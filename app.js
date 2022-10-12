@@ -14,3 +14,20 @@ app.listen(APP_PORT, () => {
 app.get('/', (req, res) => {
     res.sendFile(path.resolve('views/home.html'));
 });
+
+app.get('/crear-producto', (req, res) => {
+    res.sendFile(path.resolve('views/crear-producto.html'));
+});
+app.get('/views/register.html', (req, res) => {
+    res.sendFile(path.resolve('views/register.html'));
+});
+app.get('/views/login.html', (req, res) => {
+    res.sendFile(path.resolve('views/login.html'))
+});
+
+app.post('/', (req, res) => {
+    res.sendFile(path.resolve('views/home.html'))
+});
+app.get('/login', (req, res) => {
+    res.sendFile(path.resolve('views/login.html'));
+});
