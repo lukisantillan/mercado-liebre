@@ -294,6 +294,8 @@ footer {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         margin-top: 0px;
         margin-bottom: 100px;
+        transition: all 2s;
+
     }
 
     .main-header {
@@ -385,6 +387,10 @@ footer {
     .main-navbar li {
         padding: 5px 10px;
     }
+
+    main section article:hover{
+        box-shadow: 20px 10px 20px var(--negro);
+    }   
 
     .hamburguer-buttom {
         display: none;
