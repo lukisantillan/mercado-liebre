@@ -51,7 +51,6 @@ p.discount {
 .main-header {
     background-color: var(--amarillo);
     padding: 20px;
-    margin: -10px;
     position: fixed;
     top: 0;
     z-index: 1;
@@ -121,18 +120,11 @@ p.discount {
 
 .description {
     display: none;
-    margin-top: 20px;
-    color: white;
-    transition: all 2s;
-}
-
-.description:hover{
-    color: var(--negro);
 }
 
 
-section.banner img {
-    width: 100%;
+.banner{
+    max-width: 100%;
 }
 
 main {
@@ -352,6 +344,9 @@ footer {
     p.price {
         width: 70%;
     }
+    .description{
+        display: flex;
+    }
 
     .create-form {
         margin-top: 0px;
@@ -431,5 +426,15 @@ footer {
     .fa-gift:hover,
     .fa-credit-card:hover {
         color: var(--amarillo);
+    }
+    .description {
+        display: none;
+        margin-top: 20px;
+        color: white;
+        transition: all 2s;
+    }
+    
+    .description:hover{
+        color: var(--negro);
     }
 }
