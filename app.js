@@ -6,11 +6,11 @@ const app = express();
 const publicPath = path.resolve('public');
 app.use(express.static(publicPath));
 
-const APP_PORT = 1200
+const APP_PORT = process.env.PORT || 3001
 app.listen(APP_PORT, () => {
-    console.log('Servidor corriendo en puerto' + APP_PORT);
+    console.log(`Servidor corriendo en puerto+ ${PORT}`);
 });
-
+ 
 app.get('/', (req, res) => {
     res.sendFile(path.resolve('views/home.html'));
 });
