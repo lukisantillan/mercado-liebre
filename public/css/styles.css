@@ -437,4 +437,7 @@ footer {
     .description:hover{
         color: var(--negro);
     }
+    .banner{
+        width: 100%;
+    }
 }

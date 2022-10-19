@@ -8,7 +8,7 @@ app.use(express.static(publicPath));
 
 const APP_PORT = process.env.APP_PORT || 3001
 app.listen(APP_PORT, () => {
-    console.log(`Servidor corriendo en puerto+ ${APP_PORT}`);
+    console.log(`Servidor corriendo en puerto + ${APP_PORT}`);
 });
  
 app.get('/', (req, res) => {
@@ -16,18 +16,18 @@ app.get('/', (req, res) => {
 });
 
 app.get('/crear-producto', (req, res) => {
-    res.sendFile(path.resolve('views/crear-producto.html'));
+    res.sendFile(path.join(__dirname + '/views/crear-producto.html'));
 });
-app.get('/views/register.html', (req, res) => {
-    res.sendFile(path.resolve('views/register.html'));
+app.get('/register', (req, res) => {
+    res.sendFile(path.join(__dirname + '/views/register.html'));
 });
-app.get('/views/login.html', (req, res) => {
-    res.sendFile(path.resolve('views/login.html'))
+app.get('/login', (req, res) => {
+    res.sendFile(path.join(__dirname + '/views/login.html'))
 });
 
 app.post('/', (req, res) => {
-    res.sendFile(path.resolve('views/home.html'))
+    res.sendFile(path.join(__dirname + '/views/home.html'))
 });
 app.get('/login', (req, res) => {
-    res.sendFile(path.resolve('views/login.html'));
+    res.sendFile(path.join(__dirname + '/views/login.html'));
 });

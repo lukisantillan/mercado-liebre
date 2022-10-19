@@ -60,7 +60,7 @@
 
     <div class="control-formulario">
         <label> Nombre: </label>
-        <input type="text" name="nombre" class="control" required>
+        <input type="text" name="nombre" class="control" minlength="3" required>
     </div>
 
     <div class="control-formulario">
@@ -70,17 +70,12 @@
 
     <div class="control-formulario">
         <label> Nombre de usuari@: </label>
-        <input type="text" name="nombreDeUsuario" class="control" required>
+        <input type="text" name="nombreDeUsuario" class="control" required minlength="5">
     </div>
 
     <div class="control-formulario">
         <label> Fecha de nacimiento: </label>
         <input type="date" name="fechaDeNacimiento" class="control" required>
-    </div>
-
-    <div class="control-formulario">
-        <label> Nombre de usuari@: </label>
-        <input type="text" name="nombreDeUsuario" class="control" required>
     </div>
 
     <div class="control-formulario">
@@ -107,12 +102,12 @@
 
     <div class="control-formulario">
         <label> Contraseña: </label>
-        <input type="password" name="Contraseña" class="control" required>
+        <input type="password" name="Contraseña" class="control" required minlength="8">
     </div>
 
     <div class="control-formulario">
         <label> Confirmar contraseña: </label>
-        <input type="password" name="confirmarContraseña" class="control" required>
+        <input type="password" name="confirmarContraseña" class="control" required minlength="8">
     </div>
     <div>
         <button type="submit" class="boton-formulario"> Crear </button>
